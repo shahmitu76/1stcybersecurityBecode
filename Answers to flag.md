@@ -1,16 +1,28 @@
-Answers to flag:
+# Answers to flag:
 
-Bash export flag- chapter 5
 
-command: env
 
-flag=BC{EXPORT_B4SH_FLAG}
+1. Edgar Allen Poe : FLAG : BC{3d54r_4ll4n_P03_FL45} 
 
-Partial path flag-chapter 2(quetsion no. 7)
+2. Which command Becode: BC{WH1CH_FL4G_EXECUTLE_FILE}
 
-command: find / -type f -name "becode-*.sh"
+3. Password File: FLAG: BC{PASSWORD_FILE}
 
-FLAG: BC{FLAG_FIND_PARTIAL_PATH}
+4. Partial path: FLAG: BC{FLAG_FIND_PARTIAL_PATH}
+
+5. Grep me Lorem:  BC{GREP_ME_LOREM_FL4G}
+
+6. Export Bash Flag: flag=BC{EXPORT_B4SH_FLAG}
+
+   ## 
+
+
+
+
+
+
+
+
 
 
 
