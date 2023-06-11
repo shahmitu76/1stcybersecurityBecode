@@ -1,4 +1,4 @@
-# Text manipulation with Linux
+# Text manipulation with Linux- Answer sheet
 
 Connect to the virtual machine 10.12.181.X with the following credentials:
 
@@ -233,7 +233,7 @@ Grep accepts files as parameters or can also read from standard input. The manda
     ````sh
     # lines that contain "hello" and "goodbye
     grep "goodbye" file.txt | grep "hello
-
+    
     # lines that contain letters, spaces or commas in parentheses
     grep "([a-z ,]*)" file.txt
     ````
@@ -501,34 +501,92 @@ satvik 80000
 ## Exercises 
 
 1. Search all sequences containing "Loxondota" in ``/home/student/lorem.txt``
-    > Flag :
+    > Flag : BC{GREP_ME_LOREM_FL4G}
+    >
+    > Command: grep "Loxondota" /home/student/lorem.txt
 1. Copy the file /etc/passwd to your home directory. Display the line starting with ``student`` name.
-    > Your commands :
+    > Your commands : cp /etc/passwd ~
+    >
+    > ls ~
+    >
+    > cat ~/passwd | grep "student"
+    >
+    > Answer:student:x:1001:1001:,,,:/home/student:/bin/bash
 1. Display the lines in the passwd file starting with login names of 3 or 4 characters.
-    > Your commands :
+    > Your commands : grep  -E "^.{3,4}:" passwd
+    >
+    > Answer: root:x:0:0:root:/root:/bin/bash
+    > bin:x:2:2:bin:/bin:/usr/sbin/nologin
+    > sys:x:3:3:sys:/dev:/usr/sbin/nologin
+    > sync:x:4:65534:sync:/bin:/bin/sync
+    > man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+    > lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+    > mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+    > news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+    > uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+    > list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+    > irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+    > _apt:x:105:65534::/nonexistent:/bin/false
+    > lxd:x:106:65534::/var/lib/lxd/:/bin/false
+    > sshd:x:114:65534::/var/run/sshd:/usr/sbin/nologin
+    > jeff:x:1002:1002:,,,:/home/jeff:/bin/bash
 1. In the file ``/home/student/sample.txt`` how many different values are there in the first column? in the second?
-    > Your response :  
-    > Your command :
+    
+     ans: 8 values in 1st column as well as 2nd
+    
+    command : cat sample.txt
+    
+    > ind1,20
+    > ind2,20
+    > ind3,10
+    > ind4,20
+    > ind2,30
+    > ind1,10
+    > ind4,11
+    > ind3,20
 1. In the file ``/home/student/sample.txt`` sort the values in the second column by frequency of occurrence. (uniq -c can be useful)
-    > Your response :  
-    > Your command :
+    > Your response : 
+    >
+    > ​      4 20
+    > ​      2 10
+    > ​      1 30
+    > ​      1 11
+    > Your command : cut -d "," -f 2 sample.txt | sort | uniq -c | sort -r
 1. In the file ``/home/student/iris.data`` Change the column separator (comma) to tab (make sure that the changes are applied to the file)
     > Your response :  
-    > Your command :
+    > Your command :  sed -i 's#,#\t#g' iris.data | cat iris.data
 1. In the file ``/home/student/iris.data``, extract from this file the column 3 (petal length in cm) (use cut )
     > Your response :  
-    > Your command :
+    > Your command : cut -f 3 iris.data
 1. In the file ``/home/student/iris.data``, count the number of flower species (cut and uniq)
-    > Your response :  
-    > Your command :
+    > Your response :  cut -f 5 iris.data | sort | egrep -v "^$" | uniq -c
+    >      50 Iris-setosa
+    >     100 Iris-versicolor
+    >      50 Iris-virginica
 1. In the file ``/home/student/iris.data``, sort by increasing petal length (see sort options)
     > Your response :  
-    > Your command :
+    > Your command : sort -k 4 iris.data
 1. In the file ``/home/student/iris.data``, show only lines with petal length greater than the average size
     > Your response :  
-    > Your command :
+    > Your command :  awk '{ sum += $3 } { avg=sum / NR; } { if ($3>$avg) print $0}' iris.data
 1. Using ``/etc/passwd``, extract the user and home directory fields for all users on your student
-machine for which the shell is set to ``/bin/false``. 
-    > Your response :
-    > Your command
+   machine for which the shell is set to ``/bin/false``. 
+    > Your response :  awk -F : '{if ($7== "/bin/false") print $1,$6}' /etc/passwd
+    > systemd-timesync /run/systemd
+    > systemd-network /run/systemd/netif
+    > systemd-resolve /run/systemd/resolve
+    > systemd-bus-proxy /run/systemd
+    > syslog /home/syslog
+    > _apt /nonexistent
+    > lxd /var/lib/lxd/
+    > mysql /nonexistent
+    > messagebus /var/run/dbus
+    > uuidd /run/uuidd
+    > dnsmasq /var/lib/misc
+    > postfix /var/spool/postfix
+    > dovecot /usr/lib/dovecot
+    > dovenull /nonexistent
+    > colord /var/lib/colord
+    >
+    > 
 

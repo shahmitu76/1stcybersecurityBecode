@@ -1,6 +1,6 @@
 # ***Things I learnt in last 1 month at BeCode:***
 
-## 1. How to add and update files on github:
+## 1. How to add and update files on GitHub:
 
 
 
@@ -15,8 +15,15 @@
 2. git add * (it will add everything new to the repository)
    git commit -m "hello"(any message)
    git push
+3. For updating any files:
+   1. go in the repository on your local machine.
+   2. git pull- this will merge all the files from github repository into your local repository. But it will not change the local repository.
+   3. Make changes in the files locally.
+   4. git add . - to add all the files in the repo
+   5. git commit -m " message"
+   6. git push
 
-# 
+
 
 ## 2.Networking:
 
