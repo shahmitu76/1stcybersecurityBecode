@@ -1,4 +1,4 @@
-# Bash environnement
+# Bash environement- Answer sheet
 
 > Connect to the virtual machine 10.12.181.X with the following credentials:
 > 
@@ -112,11 +112,12 @@ We use shell variables (without export ) when we want the variables to be availa
 
 ### Exercises 
 
-1. On your student machine what is the value of the FLAG environment variabl
+1. On your student machine what is the value of the FLAG environment variable?
 
-2. command: env
+   command: env
 
    flag=BC{EXPORT_B4SH_FLAG}
+
 1. Currently if you notice your machine, the variable you have created will be deleted. What should you do to make your variable persistent? (With a Bash shell).
 > Commands : Export the variable
 
