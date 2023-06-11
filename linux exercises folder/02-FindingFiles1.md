@@ -72,26 +72,56 @@ $ echo $PATH
 
 ## Exercises 
 1. Create a file named ``my-file.txt`` with the touch command. Then execute the ``locate my-file.txt`` command. Do you find the file? 
-    > Your response :
+    > Your response :I touch my-file.txt. But it will not be updated in the database as it is just created
 1. Run the command sudo ``updatedb``. And run the locate my-file.txt command again. Do you find your file ?
-    > Your response :
+    > Your response : yes
+    >
+    > 
+    >
+    > 
 1. With the command ``which``, find the executable file nc and indicate the path
-    > Path :
+    > Command: which nc
+    >
+    > Path :/bin/nc
 1. With the command ``which``, find the executable file becode. What is the flag ?
-    > Flag :
+    > Command: which becode
+    >
+    > Flag :/flag-BC{WH1CH_FL4G_EXECUTLE_FILE}
 1. Search with ``find ``command for a file that contains the name "Edgar Allan Poe". What is the flag ?
+    > go to the page of ip student address. it will be a blank page. Right click and find page source.
+    >
     > Flag :
+    >
+    > |                    |                                 |
+    > | ------------------ | ------------------------------- |
+    > | Edgar Allan Poe ## |                                 |
+    > |                    | FLAG : BC{3d54r_4ll4n_P03_FL45} |
+    > |                    |                                 |
 1. Using the ``find`` command, find the file password.txt and specify the flag.
-    > Flag :
+    > find / -type f -name password.txt 
+    >
+    > /var/www/html/a/b/c/d/e/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/password.txt
+    >
+    > cat /var/www/html/a/b/c/d/e/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/password.txt
+    >
+    > Flag :FLAG: BC{PASSWORD_FILE}
 1. With the command ``find``, find a file that starts with ``becode-`` and ends with ``.sh``.
-    > Flag : 
+    > command:  find / -type f -name "becode-*.sh" | grep "FLAG"
+    >
+    > Flag : BC{FLAG_FIND_PARTIAL_PATH}
 1. Using the ``find`` command to identify any file (not directory) modified in the last day, NOT owned by the root
-user and execute ls -l on them. **Chaining/piping commands is NOT allowed!**
-    > Your command : 
+   user and execute ls -l on them. **Chaining/piping commands is NOT allowed!**
+    > Your command :  find / ! -user root -type f -newermt "0"
 1. With the find command, find all the files that have an authorization of ``0777``.
-    > Your command
+    > Your command: find / -perm 777 -type f | ls -la
 1. With the find command, find all the files in the folder ``/home/student/findme/`` that have an authorization of ``0777`` and change the rights of these files to ``0755``
-    > Your command 
+    > Your command : 
+    >
+    >  find /home/student/findme  -perm 0777 -type f | chmod 0755 /home/student/findme/*
+    >
+    > then ls -la
+    >
+    > 
 
 
 
