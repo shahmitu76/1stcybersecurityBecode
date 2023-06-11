@@ -1,4 +1,4 @@
-# Linux : Piping and Redirection
+# Linux : Piping and Redirection-Answer Sheet
 
 ## Pipe
 
@@ -68,22 +68,32 @@ test.txt
 Read the following [article](https://ryanstutorials.net/linuxtutorial/piping.php) and answer the questions below. Some questions will require additional research.
 
 1. Write the message "hello everyone" in a file called "test" by redirecting the output of the echo command.
-    > Your command :
-
+    > Your command : echo "hello everyone" > test
+    > student@BXL-Mitu:~$ cat test
+    > hello everyone
+    
 1. Write the message "goodbye" in the same file "test" by redirecting the output of the echo command and without overwriting the content of "test" and check with the cat command
-    > Your command :
-
+    > Your command :  echo "good bye" >> test
+    > student@BXL-Mitu:~$ cat test
+    > hello everyone
+    > good bye
+    
 1. Make the ``ls -la`` command redirect to the ``foo`` file
-    > Your command :
-
+    > Your command : .ls -la > foo
+    > student@BXL-Mitu:~$ cat foo
+    
 1. Execute ``find /etc -name *conf*`` command  and redirect errors (only errors) to a file named err.txt 
-    > Your command :
-
+    > Your command : find /etc -name *conf*  2>err.txt(remember to put number 2 right before the> sign and then 
+    >
+    > cat err.txt
+    
 1. Repeat the previous exercise, this time redirecting the errors to the linux nothingness.
-    > Your command :
-
+    > Your command :  find /etc -name *conf*  2> /dev/null 
+    >
+    > ​                                 cat /dev/null (it will show nothing)
+    
 1. Now redirect the standard output and the error output of the ``find /etc -name *conf*`` command to two different files (std.out and std.err)
-    > Your command :
+    > Your command : find /etc -name *conf*  1> std.out  2>std.err
 
 1. What does the mkfifo command do?
     > The mkfifo() function **creates a new FIFO special file (FIFO) whose name is defined by path**. A FIFO special file is a type of file with the property that data written to the file is read on a first-in-first-out basis required
