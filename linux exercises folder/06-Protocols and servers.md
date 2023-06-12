@@ -29,14 +29,53 @@ First, please follow tthese pdf :
 
 1.  On your kali (or other) , install ``ngnix`` to have an http server on port 8080. Replace the default page of ngnix by an html page displaying a hello world.
     > No answer required
-
+    >
+    > [^How to install nginx on port 8080]: 
+    >
+    > 
+    >
+    > 1. Open the Kali machine. Go to root. Command: sudo su root
+    >
+    > 2. sudo apt update
+    >
+    > 3. apt install nginx
+    >
+    > 4. Check the status of nginx: Command: systemctl status nginx
+    >
+    > 5. for now: it will be inactive
+    >
+    > 6. Start it. Command: Systemctl start nginx
+    >
+    > 7. Now go to /etc/nginx/sites-enabled. There will be a file called default
+    >
+    > 8. open default. Command : nano default
+    >
+    > 9. Change the server port from 80 to 8080(both places)
+    >
+    > 10. go down and change "server_name_i" to "server_name "" "
+    >
+    > 11. Save it.
+    >
+    >     
+    >
+    > [^Replace the default page of ngnix by an html page displaying a hello world.]: 
+    >
+    > 1. go to /var/www/html
+    > 2. Change index.html. If there is some other file, delete it.
+    > 3. open index.html.  command: nano index.html and change the content to "Hello World" and save it.
+    > 4. start the nginx again
+    > 5. now go to firefox and write localhost:8080
+    > 6. It will give Hello World page
+    >
+    > 
+    
 1. What other well-known service could be used instead of nginx? 
     > Your answer : Apache webserver
 
 1. On your student machine, create a temporary http server with python, on port ``5000``. Then on your kali machine, open a browser and go to the address ``10.12.181.X:``.
-    > Your command : python -m SimpleHTTPServer 5000
+    > Your command : python -m SimpleHTTPServer 5000 or python3 -m http.server 5000(on kali)
     >
-    > to check: go to Kali, open the firefox and give student ip address: 5000
+    > to check: go to Kali, open the firefox and give student ip address: 5000. It will show you the listing of all directories in your student machine.
     
 1. Let's imagine that a hacker owns the domain name ``g00gle.com``, which tool would allow him to obtain an ssl certificate (https) very easily?
     > Your answer :  
