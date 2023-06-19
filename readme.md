@@ -41,12 +41,10 @@ Set up the following Linux infrastructure:
 
    # One workstation running a desktop environment and the following apps:
 
-   - LibreOffice
-   - Gimp
+   - [/Linux project/Libre office and Gimp.md]()
+   
+     Use this link for Libre Office , Gimp and the automatic addressing of Linux Mint
+   
    - Mullvad browser
-   - Required
-     1. This workstation uses automatic addressing
-     2. The /home folder is located on a separate partition, same disk
-   - Optional
-     1. Propose and implement a solution to remotely help a user
-
+   
+     
