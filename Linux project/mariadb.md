@@ -130,9 +130,7 @@ From her, we can download the latest version of 'THE LATEST STABLE GLPI VERSION'
   | **sudo ufw allow 80** |
   | **sudo ufw status**   |
 
-- It will take through you the installation. At one point, it will ask for :
-
-  ![image-20230619121754810](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230619121754810.png)
+- It will take through you the installation. At one point, it will ask for :![image-20230619121754810](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230619121754810.png)()
 
   Give the name of your user database which you created earlier and pwd. In my case, its glpi
 
@@ -154,50 +152,3 @@ From her, we can download the latest version of 'THE LATEST STABLE GLPI VERSION'
 
 And you are done!
 
-
-
-
-
-download and extract glpi
-
-
-
-cd /var/www/html
-
-ll
-
-use wget command as in video
-
-
-
-
-
-
-
-
-
-
-
-
-
-GRANT ALL PRIVILEGES ON glpidb.* TO  'glpiuser'@'localhost' IDENTIFIED BY 'password'; // define a password here `FLUSH PRIVILEGES; `EXIT;
-
-1. Install PHP and necessary modules: `sudo apt install php libapache2-mod-php php-mysql -y Restart Apache for the changes to take effect: `sudo systemctl restart apache2`
-
-   ### Firewall
-
-   sudo ufw allow 80  sudo ufw allow 443 (edited)
-
-   
-
-   
-
-   
-
-   
-
-2. *[*11:39 AM*]*
-
-   And for GLPI, follow this video: https://www.youtube.com/watch?v=X3jbo6rFntI&t=458s GLPI download link: Download link: `cd /tmp/ wget https://github.com/glpi-project/glpi/releases/download/10.0.7/glpi-10.0.7.tgz
-
-   [YouTube](https://www.youtube.com/)
