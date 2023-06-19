@@ -23,6 +23,8 @@ Set up the following Linux infrastructure:
 
    
 
+   
+
    - DHCP (one scope serving the local internal network) isc-dhcp-server
    - DNS (resolve internal resources, a redirector is used for external resources) bind
    - HTTP+ mariadb (internal website running GLPI)
