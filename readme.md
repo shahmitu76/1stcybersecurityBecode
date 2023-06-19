@@ -45,6 +45,8 @@ Set up the following Linux infrastructure:
    
      Use this link for Libre Office , Gimp and the automatic addressing of Linux Mint
    
-   - Mullvad browser
+     # Mullvad Browser
+   
+     Use this link [/Linux Project/mullvad.md]()
    
      
