@@ -1,4 +1,4 @@
-# Downloading files
+# Downloading files- Answer sheet
 
 ## Goals : 
 - Know how to transfer files between several machines
@@ -194,7 +194,7 @@ tftp 10.12.181.X <<< "get shell5555.php shell5555.php"
     ````
     echo "This is a malware file" > malware.php
     ````
-    Then, in the same directory, ccreate a temporary server with python on port 5000.
+    Then, in the same directory, create a temporary server with python on port 5000.
     ````
     python3 -m http.server 5000
     ````
@@ -209,5 +209,4 @@ tftp 10.12.181.X <<< "get shell5555.php shell5555.php"
 
 1. On the student machine,  transfer ``/etc/passwd`` file to your kali machine with tftp
     > your commands
-
 
