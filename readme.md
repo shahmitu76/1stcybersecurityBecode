@@ -9,7 +9,9 @@ Set up the following Linux infrastructure:
 
    ["C:\Githubciscopackettraceractivity\cybersecurity1stmonthwork\Linux project\How to install Ubuntu Server in Oracle Virtual Box.md"]()
 
-   ["C:\Githubciscopackettraceractivity\cybersecurity1stmonthwork\Linux project\How to install Ubuntu Server in Oracle Virtual Box.md"]()
+   [Linux project/How to install Ubuntu Server in Oracle Virtual Box.md"]()
+
+   
 
    
 
