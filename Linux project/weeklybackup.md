@@ -2,7 +2,7 @@
 
 - So, first I checked the time zone of my system. Date was fine, but time was different. So, I set the right time zone.
 
-[](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-check-and-set-timezone-in-ubuntu-20-04/)use this link to see how to set right time zone.
+[https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-check-and-set-timezone-in-ubuntu-20-04/](https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-check-and-set-timezone-in-ubuntu-20-04/)use this link to see how to set right time zone.
 
 
 
@@ -62,8 +62,8 @@
 ```
 
 
-# Set the backup directory
-backup_dir="/path/to/backup/directory"
+# Set the backup directory(/path/to/backup/directory)
+backup_dir="/home/mitu/scripts"   
 
 # Set the archive filename with the current date
 archive_file="$backup_dir/config_backup_$(date +%Y%m%d).tar.gz"
@@ -148,7 +148,6 @@ crontab -e
 Save and exit the crontab file.
 
 That's it! The script will now run automatically every week, creating a compressed archive of the configuration files for DHCP, DNS, and MariaDB services in a single file with a timestamped filename in the specified backup directory.
-
 
 
 
