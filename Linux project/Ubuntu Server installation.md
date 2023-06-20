@@ -68,9 +68,30 @@ Some of the steps which I did:
 
       
 
-      
+      ## Few more steps:
 
       
-
+      
+      - ## On my Virtual box I installed 2 machines, Ubuntu server and client Kali
+      
+        ## *I set up settings on Bridget Adapter on both machines.*
+      
+      
+      
+      - # *Giving static IP address to my Ubuntu Server:*
+      
+        ​     
+      
+        >   
+        >
+        > | sudo nano 00-installer-config.yaml |
+        > | ---------------------------------- |
+      
+      - # *Install Firewall, Harden ssh, Client config, Server config, Test connection:*
+      
+        ​    **I used documentation: Server_hardening**
+  
+  
+  
   
 
