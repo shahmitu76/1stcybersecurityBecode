@@ -17,6 +17,12 @@ It will show you the network configuration of your server. For my system;
 | ---------- | --------------- | ------------- | --------- |
 | 10.0.2.10  | 10.0.2.0        | 255.255.255.0 | enp0s3    |
 
+![image-20230621162915721](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230621162915721.png)
+
+
+
+
+
 <img src="C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230621162142891.png" alt="image-20230621162142891"  />
 
 4. To install dhcp server:
