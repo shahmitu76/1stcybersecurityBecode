@@ -15,7 +15,7 @@ Set up the following Linux infrastructure:
 
    For DHCP server installation, refer to the link:
 
-   [/linux project/DHCP.md]()
+   [DNS](https://github.com/shahmitu76/cybersecurity1stmonthwork/blob/main/Linux%20project/DHCP.md#dhcp-one-scope-serving-the-local-internal-network-isc-dhcp-server)
 
    
 

@@ -22,9 +22,7 @@ Some of the steps which I did:
 
 - Then go to Storage. Load your iso file image here.
 
-- Go to Network. Change NAT to Bridge Adaptor
-
-- Select ok
+- Go to Network. Change NAT to Nat network. Select ok
 
 - Click on start.
 
@@ -74,7 +72,7 @@ Some of the steps which I did:
       
       - ## On my Virtual box I installed 2 machines, Ubuntu server and client Kali
       
-        ## *I set up settings on Bridget Adapter on both machines.*
+        ## *I set up settings on NAT network on both  machines.*
       
       
       
@@ -84,8 +82,8 @@ Some of the steps which I did:
       
         >   
         >
-        > | sudo nano 00-installer-config.yaml |
-        > | ---------------------------------- |
+        > | sudo nano  /etc/netplan/ 00-installer-config.yaml |
+        > | ------------------------------------------------- |
       
       - # *Install Firewall, Harden ssh, Client config, Server config, Test connection:*
       

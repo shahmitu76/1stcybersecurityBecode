@@ -4,7 +4,7 @@
 
 ## Install 
 
-1. Open a Terminal and download the latest release for your current user:
+1. Open a linux mint Terminal and download the latest release for your current user:
 
    cd ~/.local/share && wget https://mullvad.net/en/download/browser/linux64/latest -O mullvad-browser.tar.xz
 

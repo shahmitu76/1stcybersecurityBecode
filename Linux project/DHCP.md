@@ -67,38 +67,38 @@ It will show you the network configuration of your server. For my system;
    | sudo systemctl status isc-dhcp-server |
    | ------------------------------------- |
    
-   ![image-20230618220133040](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230618220133040.png)
+   ![](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230621085510017.png)
+
+   
 
    As you can see , it is active and running.
-
+   
    11 .Now to allow DHCP server to listen on 67 port:
    
    | sudo ufw allow 67/udp |
    | --------------------- |
 
    12. Check the status of firewall
-
+   
    | sudo ufw status |
    | --------------- |
    
    
    
    ![image-20230619094711531](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230619094711531.png)
-   
+
    you can check port 67 is added to the rules of firewall.
 
    12. Now , in my case, I have to switch off the internet and switch it on again to let my kali machine and linux mint get the right Ip address in my pool of DHCP.  Its working correctly.
 
    13. Also, type the command on the terminal of ubuntu server:
-
+   
        | dhcp-lease-list |
        | --------------- |
    
        It will give the names of all machines to whom it has leased the address. You can see, its in right DHCP range.
    
-   
-   
-   ![image-20230619094541411](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230619094541411.png)
+   ![](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230621091727740.png)
    
    
    
