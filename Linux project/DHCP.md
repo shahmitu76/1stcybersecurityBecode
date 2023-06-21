@@ -19,7 +19,9 @@ It will show you the network configuration of your server. For my system;
 
 ![image-20230621162915721](C:\Users\nimes\AppData\Roaming\Typora\typora-user-images\image-20230621162915721.png)
 
+Linux project/Screenshot 2023-06-21 164725.jpg
 
+![](Linux project/Screenshot 2023-06-21 164725.jpg)
 
 
 
