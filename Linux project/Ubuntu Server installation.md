@@ -87,7 +87,7 @@ Some of the steps which I did:
       
       - # *Install Firewall, Harden ssh, Client config, Server config, Test connection:*
       
-        ​    **I used documentation: Server_hardening**
+        ​    Go to [Server_hardening](<https://github.com/shahmitu76/cybersecurity1stmonthwork/blob/main/Linux%20project/Server_hardenning%20(1).md#motivation>)
   
   
   
