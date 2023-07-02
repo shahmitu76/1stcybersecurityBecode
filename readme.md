@@ -1,14 +1,16 @@
-Linux project
-[Linux Server Installation](<https://github.com/shahmitu76/cybersecurity1stmonthwork/blob/main/Linux%20project/Ubuntu%20Server%20installation.md#how-to-install-ubuntu-server-in-oracle-virtual-box>)
+#         Linux project
 
+
+  
 Set up the following Linux infrastructure:
 
   1. # One server (no GUI) running the following services:
 
    I have installed Ubuntu Server 22.04 LDS. Here is the link.
+   
+   [Linux Server Installation](<https://github.com/shahmitu76/cybersecurity1stmonthwork/blob/main/Linux%20project/Ubuntu%20Server%20installation.md#how-to-install-ubuntu-server-in-oracle-virtual-box>)
 
-   [Linux project/How to install Ubuntu Server in Oracle Virtual Box.md](Linux project/How to install Ubuntu Server in Oracle Virtual Box.md)
-
+   
    
 
   2. # DHCP (one scope serving the local internal network) isc-dhcp-server
@@ -19,7 +21,7 @@ Set up the following Linux infrastructure:
 
    
 
-   3. DNS (resolve internal resources, a redirector is used for external resources) bind
+#    3. DNS (resolve internal resources, a redirector is used for external resources) bind
    - Click on this link [DNS](<https://github.com/shahmitu76/cybersecurity1stmonthwork/blob/main/Linux%20project/DNSnew.md#dns-bind-installation>)
 
    4. # HTTP+ mariadb (internal website running GLPI)
@@ -40,7 +42,8 @@ Set up the following Linux infrastructure:
 
      
 
-  7. I downloaded Linux Mint to act as a client.Go through this link for whole installation of Linux Mint:[Linux Mint Cinnamon](<https://github.com/shahmitu76/cybersecurity1stmonthwork/blob/main/Linux%20project/Linux%20mint%20installation.md#linux-mint-installation-and-partitioning>)
+# 7.  Linux Mint Installation
+  I downloaded Linux Mint to act as a client.Go through this link for whole installation of Linux Mint:[Linux Mint Cinnamon](<https://github.com/shahmitu76/cybersecurity1stmonthwork/blob/main/Linux%20project/Linux%20mint%20installation.md#linux-mint-installation-and-partitioning>)
   
  8. # One workstation running a desktop environment and the following apps:
    Use this link for Libre Office , Gimp and the automatic addressing of Linux Mint
